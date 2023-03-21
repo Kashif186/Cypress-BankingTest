@@ -5,13 +5,13 @@ describe('UI tests in Cypress', () => {
 
     beforeEach(() => {
       cy.visit('https://parabank.parasoft.com/')
+    })
+  
+    it('Test login functionality with valid credentials', () => {
       cy.get('a').contains('Admin Page').click()
       cy.get('[value = "CLEAN"]').click()
       cy.get('[value = "INIT"]').click()
       cy.get('.logo').click()
-    })
-  
-    it('Test login functionality with valid credentials', () => {
       cy.login(username, password)
       cy.url().should('include', '/overview')
     })
