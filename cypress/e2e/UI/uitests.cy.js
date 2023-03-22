@@ -32,6 +32,10 @@ describe('UI tests in Cypress', () => {
     })
   
     it('Test fund transfer between accounts (within the same bank)', () => {
+      cy.get('a').contains('Admin Page').click()
+      cy.get('[value = "CLEAN"]').click()
+      cy.get('[value = "INIT"]').click()
+      cy.get('.logo').click()
       cy.login(username, password)
       cy.get('a').contains('Transfer Funds').click()
       cy.get('#amount').type('200')
@@ -67,6 +71,10 @@ describe('UI tests in Cypress', () => {
     })
   
     it('Test logout functionality', () => {
+      cy.get('a').contains('Admin Page').click()
+      cy.get('[value = "CLEAN"]').click()
+      cy.get('[value = "INIT"]').click()
+      cy.get('.logo').click()
       cy.login(username, password)
       cy.get('a').contains('Log Out').click()
       cy.get('[value = "Log In"]').should('be.visible')
