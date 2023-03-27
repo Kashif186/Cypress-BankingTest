@@ -1,0 +1,61 @@
+{
+
+    "auth": {
+
+      "username": "kashifbutt_BQ0Z5X",
+
+      "access_key": "QPzk42WjSi3JpWTptEmk"
+
+    },
+
+    "browsers": [{
+
+        "browser": "chrome",
+
+        "os": "Windows 10",
+
+        "versions": ["latest", "latest - 1"]
+
+      },
+
+      {
+
+        "browser": "firefox",
+
+        "os": "OS X Mojave",
+
+        "versions": ["latest", "latest - 1"]
+
+      },
+
+      {
+
+        "browser": "edge",
+
+        "os": "OS X Catalina",
+
+        "versions": ["latest"]
+
+      }
+
+    ],
+
+    "connection_settings": {
+        "local": false
+    },
+
+    "run_settings": {
+
+      "cypress_config_file": "./cypress.config.js",
+
+      "cypress_version": "12.8.1",
+
+      "project_name": "Cypress Banking",
+
+      "build_name": "Build no. 1",
+
+      "parallels": "5"
+
+    }
+
+  }
